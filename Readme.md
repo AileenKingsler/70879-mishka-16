@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алёна Царегородцева](https://up.htmlacademy.ru/adaptive/16/user/70879).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Арутюнян](https://htmlacademy.ru/profile/id106442).
 
 ---
 
