@@ -6,9 +6,9 @@
   </head>
   <body>
 
-    <header class="header">
-      <a class="header__logo-link" href="index.html">
-        <img class="header__logo" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+    <header class="page-header">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -20,11 +20,7 @@
             <a class="main-nav__link">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
-            <form class="main-nav__search search" action="https://echo.htmlacademy.ru">
-              <label>
-                <input class="search__field" type="search" placeholder="Поиск по сайту" required>
-              </label>
-            </form>
+            <a class="main-nav__link main-nav__link--search" href="search.html">Поиск по сайту</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--cart" href="cart.html">Корзина: пока пуста</a>
@@ -35,14 +31,14 @@
 
     <main class="page-main">
 
-      <header class="inner-header">
-        <h1 class="inner-header__title">Вязание на заказ</h1>
-      </header>
+      <section class="intro">
+        <h1 class="intro__title">Вязание на заказ</h1>
+      </section>
 
     </main>
 
-    <footer class="footer">
-      <div class="footer__social social">
+    <footer class="page-footer">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="" target="_blank">Мы в Инстаграме</a>
@@ -55,7 +51,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
+      <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <b class="copyright__text">Разработано:</b>
           <img class="copyright__image" src="http://placehold.it/27x34" width="27" height="34" alt="Разработано HTML Academy">
