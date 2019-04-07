@@ -1,0 +1,25 @@
+.hit {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+  color: $light-text-color;
+}
+
+.hit__title {
+  color: $accent-color;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hit__name {
+  color: #000000;
+}
+
+.hit__price {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
