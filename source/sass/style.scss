@@ -1,3 +1,17 @@
+@import "vars.scss";
+@import "blocks/button.scss";
+@import "blocks/section-title.scss";
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/hit.scss";
+@import "blocks/about-us.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/order-popup.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
@@ -24,16 +38,3 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-@import "vars.scss";
-@import "blocks/button.scss";
-@import "blocks/title.scss";
-@import "blocks/page-header.scss";
-@import "blocks/intro.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/hit.scss";
-@import "blocks/about-us.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/copyright.scss";
-@import "blocks/order-popup.scss";
-@import "blocks/products.scss";
