@@ -1,0 +1,30 @@
+.intro {
+  background-color: #f1f1f1;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &--mainpage {
+    padding-bottom: 120px;
+  }
+}
+
+.intro__title {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro__link {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: $accent-color;
+
+  &--second {
+    background-color: #56c3b2;
+  }
+}

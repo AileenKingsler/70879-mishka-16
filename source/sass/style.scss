@@ -1,0 +1,40 @@
+@import "vars.scss";
+@import "blocks/button.scss";
+@import "blocks/section-title.scss";
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/hit.scss";
+@import "blocks/about-us.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/order-popup.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

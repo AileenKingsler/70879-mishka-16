@@ -1,0 +1,34 @@
+.order-popup {
+  background-color: #ffffff;
+  padding: 30px 30px 45px;
+  text-align: center;
+}
+
+.order-popup__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order-popup__legend {
+  font-size: 15px;
+  color: $light-text-color;
+}
+
+.order-popup__label {
+  font-size: 17px;
+  font-weight: bold;
+  color: $light-text-color;
+}
+
+.order-popup__submit {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: $accent-color;
+  border: none;
+  cursor: pointer;
+}
