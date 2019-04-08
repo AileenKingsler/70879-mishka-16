@@ -1,0 +1,40 @@
+.order-form {
+  padding-top: 20px;
+  padding-bottom: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.order-form__description {
+  color: $light-text-color;
+}
+
+.order-form__legend {
+  font-size: 17px;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.order-form__label {
+  font-size: 17px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.order-form__field {
+  font-size: 17px;
+  line-height: 1;
+
+  &::placeholder {
+    color: $light-text-color;
+    opacity: 0.3;
+  }
+}
+
+.order-form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $light-text-color;
+}

@@ -1,0 +1,27 @@
+.reviews {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 2;
+  color: $light-text-color;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reviews__author-nickname {
+  font-size: 17px;
+  color: $light-text-color;
+}
+
+.reviews__write {
+  font-size: 18px;
+}

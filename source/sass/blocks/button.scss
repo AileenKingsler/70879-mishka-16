@@ -4,7 +4,19 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  color: $light-text-color;
   text-transform: uppercase;
+  background-color: transparent;
+  color: $light-text-color;
   cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: $light-text-color;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: $light-text-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
