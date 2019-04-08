@@ -1,0 +1,35 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts__list {
+  font-size: 15px;
+  line-height: 2;
+  color: $light-text-color;
+}
+
+.contacts__email {
+  color: $light-text-color;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-color;
+  transition: 0.25s;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:focus {
+    color: $accent-color;
+    opacity: 0.3;
+  }
+}
+
+.contacts__write {
+  font-size: 18px;
+}
