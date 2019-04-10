@@ -1,4 +1,7 @@
 .copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #000000;
 }
@@ -6,4 +9,11 @@
 .copyright__text {
   font-size: 19px;
   font-weight: bold;
+  margin-right: 25px;
+}
+
+@media (min-width: 768px) {
+  .copyright__link {
+    justify-content: flex-end;
+  }
 }

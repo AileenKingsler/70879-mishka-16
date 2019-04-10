@@ -1,14 +1,20 @@
 @import "vars.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/ul-reset.scss";
 @import "blocks/button.scss";
 @import "blocks/section-title.scss";
 @import "blocks/page-header.scss";
 @import "blocks/intro.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/site-menu.scss";
+@import "blocks/additional-menu.scss";
+@import "blocks/user-menu.scss";
 @import "blocks/hit.scss";
 @import "blocks/about-us.scss";
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/order-popup.scss";
 @import "blocks/products.scss";
@@ -41,4 +47,14 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }

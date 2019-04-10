@@ -1,6 +1,38 @@
-.main-nav__link {
-  color: #000000;
-  font-size: 17px;
-  font-weight: bold;
-  text-decoration: none;
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__note {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-nav__note {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: calc((100% - 670px) / 2);
+    font-size: 15px;
+    color: $light-text-color;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav {
+    width: 1050px;
+  }
+
+  .main-nav__note {
+    right: calc((100% - 1050px) / 2);
+  }
 }
