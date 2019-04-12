@@ -1,3 +1,4 @@
+@import "normalize.scss";
 @import "vars.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/ul-reset.scss";
@@ -9,6 +10,7 @@
 @import "blocks/site-menu.scss";
 @import "blocks/additional-menu.scss";
 @import "blocks/user-menu.scss";
+@import "blocks/page-main.scss";
 @import "blocks/hit.scss";
 @import "blocks/about-us.scss";
 @import "blocks/reviews.scss";
@@ -24,14 +26,14 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }

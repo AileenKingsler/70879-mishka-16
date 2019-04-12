@@ -20,9 +20,6 @@
 @media (min-width: 768px) {
   .site-menu {
     display: flex;
-    position: absolute;
-    top: 100%;
-    left: calc((100% - 670px) / 2);
   }
 
   .site-menu__item {
@@ -38,7 +35,7 @@
 
 @media (min-width: 1150px) {
   .site-menu {
-    position: static;
+    order: -3;
     width: 400px;
     margin-right: auto;
   }

@@ -33,6 +33,7 @@
 
   .about-us__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 22px;
@@ -40,7 +41,6 @@
 
   .about-us__item {
     width: 300px;
-    margin-right: 70px;
     margin-bottom: 50px;
 
     &:nth-child(2n) {

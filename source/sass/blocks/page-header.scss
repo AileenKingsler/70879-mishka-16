@@ -6,36 +6,10 @@
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__logo-link--desktop {
-  display: none;
-}
-
 @media (min-width: 768px) {
-  .page-header {
-    display: flex;
-    position: relative;
-    border-bottom: 1px solid #ececec;
-  }
-
   .page-header__logo-link {
-    position: absolute;
-    left: calc((100% - 670px) / 2);
-    top: 50%;
-    transform: translateY(-50%);
     border-bottom: none;
     padding: 0;
-  }
-}
-
-@media (min-width: 1150px) {
-  .page-header__logo-link--mobile {
-    display: none;
-  }
-
-  .page-header__logo-link--desktop {
-    display: flex;
-    position: static;
-    transform: none;
-    align-items: center;
+    order: -2;
   }
 }
