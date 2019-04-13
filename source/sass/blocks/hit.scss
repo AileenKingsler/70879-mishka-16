@@ -17,7 +17,6 @@
 
 .hit__name {
   color: #000000;
-  margin-top: 0;
   margin-bottom: 5px;
 }
 
@@ -60,11 +59,6 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
-  order: 1;
-}
-
-.hit__order {
-  order: 2;
 }
 
 @media (min-width: 768px) {
@@ -121,12 +115,10 @@
     font-size: 20px;
     margin-top: 55px;
     margin-bottom: 35px;
-    order: 0;
   }
 
   .hit__order {
     width: 290px;
-    order: 0;
   }
 }
 

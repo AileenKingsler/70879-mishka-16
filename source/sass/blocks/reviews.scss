@@ -1,27 +1,137 @@
 .reviews {
   padding-top: 25px;
   padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+}
+
+.reviews__content-wrapper {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__title {
+  margin-bottom: 25px;
+}
+
+.reviews__list {
+  margin-bottom: 30px;
 }
 
 .reviews__text {
   font-size: 15px;
-  line-height: 2;
+  line-height: 30px;
   color: $light-text-color;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .reviews__author-name {
   font-size: 17px;
   font-weight: bold;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .reviews__author-nickname {
   font-size: 17px;
   color: $light-text-color;
+  margin: 0;
+}
+
+.reviews__arrows {
+  display: flex;
+}
+
+.reviews__arrow {
+  width: 50%;
+  border: 1px solid #ececec;
+  background-color: transparent;
+  height: 52px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.reviews__arrow--prev {
+  border-right: none;
 }
 
 .reviews__write {
   font-size: 18px;
+  margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding-top: 70px;
+    padding-bottom: 130px;
+  }
+
+  .reviews__content-wrapper {
+    width: 670px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    margin-bottom: 0;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+    margin-top: 45px;
+    order: 3;
+  }
+
+  .reviews__list {
+    margin-bottom: 0;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    margin-bottom: 55px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+  }
+
+  .reviews__arrows {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+  }
+
+  .reviews__write {
+    font-size: 17px;
+    margin-top: 0;
+    width: auto;
+    min-width: 175px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews {
+    padding-bottom: 190px;
+  }
+
+  .reviews__content-wrapper {
+    width: 1050px;
+    padding-left: 175px;
+  }
+
+  .reviews__text {
+    margin-bottom: 40px;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
+  }
+
+  .reviews__arrows {
+    width: 175px;
+  }
 }
