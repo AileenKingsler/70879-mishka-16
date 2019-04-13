@@ -1,4 +1,15 @@
-.page-header {
+.page-header__logo-link {
+  display: block;
+  text-align: center;
   padding-left: 30px;
   padding-right: 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo-link {
+    border-bottom: none;
+    padding: 0;
+    order: -2;
+  }
 }

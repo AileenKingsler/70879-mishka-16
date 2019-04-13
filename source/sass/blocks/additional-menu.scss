@@ -1,0 +1,23 @@
+.additional-menu {
+  display: none;
+}
+
+@media (min-width: 1150px) {
+  .additional-menu {
+    display: flex;
+  }
+
+  .additional-menu__link {
+    display: block;
+    min-width: 185px;
+    padding: 20px 0;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .additional-menu__link--sale {
+    padding-left: 35px;
+  }
+}
