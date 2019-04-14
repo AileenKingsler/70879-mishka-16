@@ -105,8 +105,10 @@
           <img class="manufacture__video-poster" src="http://placehold.it/260x150" width="260" height="150" alt="Процесс производства">
           <button class="manufacture__play" type="button">Воспроизвести</button>
         </div>
-        <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="manufacture__buy button" href="form.html">Сделать заказ</a>
+        <div class="manufacture__content-wrapper">
+          <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="manufacture__buy button" href="form.html">Сделать заказ</a>
+        </div>
       </section>
 
     </main>
@@ -143,17 +145,17 @@
       <form action="https://echo.htmlacademy.ru" class="order-popup__form">
         <fieldset class="order-popup__fieldset">
           <legend class="order-popup__legend">Выберите размер:</legend>
-          <ul class="order-popup__list">
+          <ul class="order-popup__list ul-reset">
             <li class="order-popup__item">
-              <input class="order-popup__control" type="radio" name="size" id="size--s" value="S" checked>
+              <input class="order-popup__control visually-hidden" type="radio" name="size" id="size--s" value="S" checked>
               <label class="order-popup__label" for="size--s">S</label>
             </li>
             <li class="order-popup__item">
-              <input class="order-popup__control" type="radio" name="size" id="size--m" value="M">
+              <input class="order-popup__control visually-hidden" type="radio" name="size" id="size--m" value="M">
               <label class="order-popup__label" for="size--m">M</label>
             </li>
             <li class="order-popup__item">
-              <input class="order-popup__control" type="radio" name="size" id="size--l" value="L">
+              <input class="order-popup__control visually-hidden" type="radio" name="size" id="size--l" value="L">
               <label class="order-popup__label" for="size--l">L</label>
             </li>
           </ul>
