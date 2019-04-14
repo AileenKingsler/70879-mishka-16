@@ -11,9 +11,8 @@
 
 .order-form__fieldset {
   width: 260px;
-  margin: 0 auto;
-  border: none;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-form__footer {
@@ -114,7 +113,7 @@
   .order-form__fieldset {
     width: 670px;
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
   }
 
   .order-form__legend {
@@ -158,6 +157,7 @@
   .order-form__field-wrapper {
     display: flex;
     align-items: baseline;
+    margin-top: 0;
   }
 
   .order-form__field {
