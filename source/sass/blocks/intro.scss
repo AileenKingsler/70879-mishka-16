@@ -1,12 +1,12 @@
 .intro {
-  background-color: #f1f1f1;
   padding-top: 70px;
-  padding-bottom: 75px;
+  padding-bottom: 76px;
+  background-color: #f1f1f1;
 }
 
 .intro--mainpage {
   padding-bottom: 0;
-  min-height: 490px;
+  min-height: 489px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -28,6 +28,7 @@
 
 .intro__link {
   display: block;
+  position: relative;
   font-size: 19px;
   font-weight: bold;
   color: #ffffff;
@@ -35,21 +36,82 @@
   background-color: $accent-color;
   padding-left: 30px;
   padding-right: 50%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  transition: 0.25s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    width: 60px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.5;
+    transition: 0.25s;
+  }
+
+  &:hover {
+    background-color: #59d5bc;
+    padding-bottom: 35px;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #59d5bc;
+  }
+
+  &:focus::after {
+    opacity: 0.3;
+  }
 }
 
-.intro__link--second {
+.intro__link--interior::after {
+  background-image: url("../img/icon-interior.svg");
+}
+
+.intro__link--toys {
   background-color: #56c3b2;
+
+  &::after {
+    background-image: url("../img/icon-toy.svg");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #46c1ae;
+  }
 }
 
 @media (min-width: 768px) {
   .intro {
-    padding-top: 100px;
+    padding-top: 95px;
+    padding-bottom: 80px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      right: 0;
+      height: 24px;
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
   }
 
   .intro--mainpage {
-    padding-top: 155px;
+    padding-top: 153px;
+    padding-bottom: 0;
     min-height: 745px;
   }
 
@@ -62,6 +124,7 @@
   .intro__list {
     width: 670px;
     display: flex;
+    align-items: flex-end;
   }
 
   .intro__item {
@@ -74,6 +137,14 @@
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 35px;
+
+    &::after {
+      top: 30px;
+    }
+
+    &:hover {
+      padding-bottom: 35px;
+    }
   }
 }
 
@@ -84,9 +155,15 @@
 
   .intro--mainpage {
     padding-bottom: 0;
+
+    &::after {
+      height: 34px;
+      bottom: -17px;
+    }
   }
 
   .intro__title {
+    width: 1050px;
     font-size: 53px;
     line-height: 57px;
   }
