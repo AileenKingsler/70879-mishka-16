@@ -14,17 +14,19 @@
 
 .page-footer__social {
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 25px;
+  padding-bottom: 27px;
 }
 
 .page-footer__copyright {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: 768px) {
   .page-footer {
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-top: 48px;
+    padding-bottom: 54px;
   }
 
   .page-footer__wrapper {
@@ -41,11 +43,14 @@
 
   .page-footer__social {
     width: 30%;
+    padding-top: 7px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   .page-footer__copyright {
     width: 30%;
-    padding-top: 0;
+    padding-top: 7px;
     padding-bottom: 0;
   }
 }

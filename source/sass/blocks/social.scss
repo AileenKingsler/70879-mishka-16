@@ -3,3 +3,30 @@
   justify-content: center;
   align-items: center;
 }
+
+.social__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  text-align: center;
+
+  &:hover .social__link-icon {
+    fill: #46c1ae;
+  }
+
+  &:focus .social__link-icon {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.social__link-icon {
+  vertical-align: bottom;
+  transition: 0.25s;
+}

@@ -1,8 +1,12 @@
 .hit {
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   font-size: 15px;
   color: $light-text-color;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: auto 6px;
+  background-image: url("../img/bg-zigzag-line.svg");
 }
 
 .hit__wrapper {
@@ -34,12 +38,12 @@
 }
 
 .hit__info {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .hit__description {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hit__characteristics {
@@ -50,7 +54,11 @@
 .hit__key,
 .hit__value {
   border-bottom: 1px solid #ececec;
-  padding: 8px 0;
+  padding: 7px 0 8px;
+}
+
+.hit__key {
+  width: 98px;
 }
 
 .hit__price {
@@ -63,8 +71,9 @@
 
 @media (min-width: 768px) {
   .hit {
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 70px;
+    background-size: auto 17px;
   }
 
   .hit__wrapper {
@@ -111,14 +120,14 @@
   }
 
   .hit__price {
-    width: 290px;
+    width: 292px;
     font-size: 20px;
-    margin-top: 55px;
-    margin-bottom: 35px;
+    margin-top: 56px;
+    margin-bottom: 34px;
   }
 
   .hit__order {
-    width: 290px;
+    width: 292px;
   }
 }
 
@@ -139,6 +148,7 @@
     justify-content: flex-start;
     position: relative;
     z-index: 1;
+    margin-bottom: 47px;
   }
 
   .hit__name {
@@ -155,11 +165,11 @@
   }
 
   .hit__description {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 
   .hit__price {
-    margin-top: 105px;
+    margin-top: 110px;
     margin-left: 175px;
   }
 

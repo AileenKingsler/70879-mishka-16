@@ -1,4 +1,10 @@
 .order-popup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -6,6 +12,11 @@
   padding: 30px 30px 45px;
   text-align: center;
   border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.order-popup--opened {
+  display: block;
 }
 
 .order-popup__title {
@@ -70,7 +81,7 @@
 
 @media (min-width: 768px) {
   .order-popup {
-    width: 560px;
+    width: 566px;
     padding: 45px 100px;
   }
 

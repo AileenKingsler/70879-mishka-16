@@ -4,12 +4,31 @@
   align-items: center;
   text-decoration: none;
   color: #000000;
+  transition: 0.25s;
+
+  &:focus {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover .copyright__image {
+    fill: #46c1ae;
+  }
+
+  &:focus .copyright__image {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
   font-size: 19px;
   font-weight: bold;
-  margin-right: 25px;
+  margin-right: 30px;
+}
+
+.copyright__image {
+  fill: $accent-color;
+  transition: 0.25s;
 }
 
 @media (min-width: 768px) {

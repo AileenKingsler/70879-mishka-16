@@ -15,6 +15,15 @@
     color: #000000;
     font-weight: bold;
     text-decoration: none;
+    transition: 0.25s;
+
+    &[href]:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &[href]:focus {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .additional-menu__link--sale {
