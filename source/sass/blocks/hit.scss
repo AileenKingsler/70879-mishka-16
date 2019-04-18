@@ -4,8 +4,9 @@
   font-size: 15px;
   color: $light-text-color;
   background-repeat: repeat-x;
-  background-position: left bottom;
-  background-size: auto 6px;
+  background-position-x: 8px;
+  background-position-y: bottom;
+  background-size: 320px 7px;
   background-image: url("../img/bg-zigzag-line.svg");
 }
 
@@ -73,7 +74,8 @@
   .hit {
     padding-top: 45px;
     padding-bottom: 70px;
-    background-size: auto 17px;
+    background-size: 772px 17px;
+    background-position-x: 17px;
   }
 
   .hit__wrapper {
@@ -138,6 +140,8 @@
     margin-right: auto;
     padding-top: 125px;
     padding-bottom: 95px;
+    background-size: 1050px 23px;
+    background-position-x: 26px;
   }
 
   .hit__wrapper {

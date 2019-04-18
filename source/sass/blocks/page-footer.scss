@@ -8,7 +8,7 @@
   margin-right: auto;
 }
 
-.page-footer__logo-link {
+.page-footer__logo-wrapper {
   display: none;
 }
 
@@ -21,6 +21,7 @@
 .page-footer__copyright {
   padding-top: 20px;
   padding-bottom: 25px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -36,9 +37,28 @@
     align-items: center;
   }
 
-  .page-footer__logo-link {
+  .page-footer__logo-wrapper {
     display: block;
     width: 30%;
+  }
+
+  .page-footer__logo-link {
+    display: inline-block;
+    vertical-align: bottom;
+
+    &:hover .page-footer__logo {
+      fill: #46c1ae;
+    }
+
+    &:focus .page-footer__logo {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo {
+    display: block;
+    transition: 0.25s;
   }
 
   .page-footer__social {
@@ -52,6 +72,7 @@
     width: 30%;
     padding-top: 7px;
     padding-bottom: 0;
+    text-align: right;
   }
 }
 
