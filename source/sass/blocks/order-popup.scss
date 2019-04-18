@@ -17,6 +17,17 @@
 
 .order-popup--opened {
   display: block;
+  animation: appearance 0.4s;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .order-popup__title {
@@ -47,6 +58,10 @@
 
 .order-popup__item {
   width: 31%;
+}
+
+.order-popup__control:checked ~ .order-popup__label {
+  border-color: $accent-color;
 }
 
 .order-popup__label {

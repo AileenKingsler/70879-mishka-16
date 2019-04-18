@@ -56,7 +56,6 @@
 
   &:hover {
     background-color: #59d5bc;
-    padding-bottom: 35px;
   }
 
   &:hover::after {
@@ -144,6 +143,7 @@
 
     &:hover {
       padding-bottom: 35px;
+      margin-top: -5px;
     }
   }
 }

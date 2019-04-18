@@ -14,7 +14,6 @@
 
 .social__link {
   display: block;
-  text-align: center;
 
   &:hover .social__link-icon {
     fill: #46c1ae;
@@ -27,6 +26,6 @@
 }
 
 .social__link-icon {
-  vertical-align: bottom;
+  display: block;
   transition: 0.25s;
 }
