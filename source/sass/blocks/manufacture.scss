@@ -31,6 +31,10 @@
   margin-right: -1px;
 }
 
+.manufacture__video-poster {
+  width: 100%;
+}
+
 .manufacture__play {
   position: absolute;
   top: 50%;
@@ -80,12 +84,6 @@
     order: -1;
     margin-top: -1px;
     border-bottom: 1px solid #ececec;
-    height: 455px;
-    background-color: #fafafa;
-  }
-
-  .manufacture__video-poster {
-    width: 100%;
   }
 
   .manufacture__title {

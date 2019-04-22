@@ -80,9 +80,14 @@
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: 350px auto;
+    background-image: url("../img/review@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__content-wrapper {
