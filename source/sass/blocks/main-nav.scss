@@ -30,6 +30,15 @@
     display: none;
   }
 
+  .main-nav--opened:not(.main-nav--nojs) {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+  }
+
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }

@@ -10,6 +10,8 @@
 }
 
 .order-form__fieldset {
+  padding: 0;
+  border: none;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -55,37 +57,35 @@
 
 .order-form__label--radio,
 .order-form__label--checkbox {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
-  padding-left: 63px;
 
   &::before,
   &::after {
     content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    flex-shrink: 0;
     transition: 0.25s;
   }
 
   &::before {
-    left: 0;
     border: 2px solid $light-text-color;
+    margin-right: 24px;
   }
 
   &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     opacity: 0;
   }
 
   &:hover::before {
-    border-color: #62d1ba;
+    border-color: $accent-color;
   }
 }
 
 .order-form__label--radio {
-  min-height: 38px;
-
   &::before,
   &::after {
     border-radius: 50%;
@@ -100,13 +100,11 @@
     left: 11px;
     width: 16px;
     height: 16px;
-    background-color: #62d1ba;
+    background-color: $accent-color;
   }
 }
 
 .order-form__label--checkbox {
-  min-height: 39px;
-
   &::before {
     width: 39px;
     height: 39px;
@@ -163,17 +161,16 @@
   transition: 0.25s;
 
   &::placeholder {
-    color: $light-text-color;
-    opacity: 0.3;
+    color: rgba($light-text-color, 0.3);
   }
 
   &:hover,
   &:focus {
-    border-color: #62d1ba;
+    border-color: $accent-color;
 
     & ~ .order-form__icon {
       opacity: 1;
-      fill: #62d1ba;
+      fill: $accent-color;
     }
   }
 }
@@ -247,7 +244,7 @@
   .order-form__fieldset {
     width: 670px;
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     padding-bottom: 0;
     margin-bottom: 25px;
 
@@ -259,6 +256,7 @@
   .order-form__legend {
     width: 25%;
     margin-bottom: 0;
+    margin-top: 17px;
 
     &::after {
       display: none;
@@ -288,13 +286,14 @@
 
   .order-form__label--radio,
   .order-form__label--checkbox {
-    padding-left: 81px;
     margin-right: 0;
+
+    &::before {
+      margin-right: 28px;
+    }
   }
 
   .order-form__label--radio {
-    min-height: 52px;
-
     &::before {
       width: 52px;
       height: 52px;
@@ -309,7 +308,7 @@
 
   .order-form__label--checkbox {
     width: 240px;
-    min-height: 52px;
+    word-break: break-word;
 
     &::before {
       width: 54px;

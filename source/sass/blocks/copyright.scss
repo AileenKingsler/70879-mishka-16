@@ -6,16 +6,17 @@
   color: #000000;
   transition: 0.25s;
 
-  &:focus {
+  &:active {
     color: rgba(0, 0, 0, 0.3);
   }
 
-  &:hover .copyright__image {
-    fill: #46c1ae;
+  &:hover .copyright__image,
+  &:focus .copyright__image {
+    fill: $accent-darker-color;
   }
 
-  &:focus .copyright__image {
-    fill: #46c1ae;
+  &:active .copyright__image {
+    fill: $accent-darker-color;
     opacity: 0.3;
   }
 }
@@ -29,10 +30,4 @@
 .copyright__image {
   fill: $accent-color;
   transition: 0.25s;
-}
-
-@media (min-width: 768px) {
-  .copyright__link {
-    //justify-content: flex-end;
-  }
 }

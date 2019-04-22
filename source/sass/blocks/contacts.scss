@@ -50,13 +50,15 @@
   border-bottom: 1px solid $accent-color;
   transition: 0.25s;
 
-  &:hover {
-    color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-darker-color;
+    border-bottom-color: $accent-darker-color;
   }
 
-  &:focus {
-    color: $accent-color;
-    opacity: 0.3;
+  &:active {
+    color: rgba($accent-darker-color, 0.3);
+    border-bottom-color: rgba($accent-darker-color, 0.1);
   }
 }
 

@@ -18,7 +18,8 @@
   padding-bottom: 27px;
   transition: 0.25s;
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba(0, 0, 0, 0.6);
 
     & .user-menu__link-icon {
@@ -27,7 +28,7 @@
     }
   }
 
-  &[href]:focus {
+  &[href]:active {
     color: rgba(0, 0, 0, 0.3);
 
     & .user-menu__link-icon {
