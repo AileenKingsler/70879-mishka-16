@@ -17,11 +17,12 @@
   padding-bottom: 27px;
   transition: 0.25s;
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &[href]:focus {
+  &[href]:active {
     color: rgba(0, 0, 0, 0.3);
   }
 }

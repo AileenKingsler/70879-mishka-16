@@ -50,3 +50,6 @@ popupForm.addEventListener('submit', function(evt){
   popupOverlay.classList.remove('popup-overlay--show');
   popup.classList.remove('order-popup--opened');
 });
+
+// Picturefill
+document.createElement( "picture" );

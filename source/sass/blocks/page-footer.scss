@@ -46,12 +46,13 @@
     display: inline-block;
     vertical-align: bottom;
 
-    &:hover .page-footer__logo {
-      fill: #46c1ae;
+    &:hover .page-footer__logo,
+    &:focus .page-footer__logo {
+      fill: $accent-darker-color;
     }
 
-    &:focus .page-footer__logo {
-      fill: #46c1ae;
+    &:active .page-footer__logo {
+      fill: $accent-darker-color;
       opacity: 0.3;
     }
   }
