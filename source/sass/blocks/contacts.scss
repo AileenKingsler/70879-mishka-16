@@ -53,12 +53,12 @@
   &:hover,
   &:focus {
     color: $accent-darker-color;
-    border-bottom-color: $accent-darker-color;
+    border-color: $accent-darker-color;
   }
 
   &:active {
     color: rgba($accent-darker-color, 0.3);
-    border-bottom-color: rgba($accent-darker-color, 0.1);
+    border-color: rgba($accent-darker-color, 0.1);
   }
 }
 
