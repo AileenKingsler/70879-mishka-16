@@ -170,10 +170,6 @@
       fill: $accent-color;
     }
   }
-
-  &:required:invalid:focus {
-    border-color: #ed143d;
-  }
 }
 
 .order-form__field--tel,
