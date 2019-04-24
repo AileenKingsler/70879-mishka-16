@@ -6,7 +6,7 @@
 }
 
 .about-us__title {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .about-us__list {
@@ -16,48 +16,26 @@
 }
 
 .about-us__item {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+}
 
-  &::before {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 37px;
-    margin-bottom: 17px;
-    background-repeat: no-repeat;
-    background-position: center;
+.about-us__icon-wrapper {
+  width: 55px;
+  height: 38px;
+  text-align: center;
+  margin-bottom: 17px;
+
+  svg {
+    vertical-align: bottom;
+    fill: $accent-color;
   }
-}
-
-.about-us__item--eco::before {
-  background-image: url("../img/icon-feature-flower.svg");
-}
-
-.about-us__item--price::before {
-  background-image: url("../img/icon-feature-money.svg");
-}
-
-.about-us__item--like::before {
-  background-image: url("../img/icon-feature-heart.svg");
-}
-
-.about-us__item--handmade::before {
-  background-image: url("../img/icon-feature-ball.svg");
-}
-
-.about-us__item--support::before {
-  background-image: url("../img/icon-feature-rocket.svg");
-}
-
-.about-us__item--package::before {
-  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: 768px) {
   .about-us {
     width: 670px;
     padding-top: 48px;
-    padding-bottom: 24px;
+    padding-bottom: 29px;
   }
 
   .about-us__title {
@@ -74,7 +52,7 @@
 
   .about-us__item {
     width: 50%;
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
 
   .about-us__item--handmade {
@@ -102,6 +80,6 @@
   .about-us {
     width: 700px;
     padding-top: 61px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
 }
