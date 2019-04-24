@@ -23,7 +23,7 @@ var popup = document.querySelector('.order-popup');
 
 if (popup) {
 
-  var popupForm = document.querySelector('.order-popup__form');
+  var popupForm = popup.querySelector('.order-popup__form');
 
   for (var i = 0; i < popupButton.length; i++) {
     popupButton[i].addEventListener('click', function(evt) {
@@ -38,17 +38,17 @@ if (popup) {
     popup.classList.remove('order-popup--opened');
   });
 
-  document.addEventListener('keydown', function(evt){
+  document.addEventListener('keydown', function(evt) {
     if(evt.keyCode === 27){
       evt.preventDefault();
-      if(popup.classList.contains('order-popup--opened')){
+      if(popup.classList.contains('order-popup--opened')) {
         popup.classList.remove('order-popup--opened');
         popupOverlay.classList.remove('popup-overlay--show');
       }
     }
   });
 
-  popupForm.addEventListener('submit', function(evt){
+  popupForm.addEventListener('submit', function(evt) {
     evt.preventDefault();
     popupOverlay.classList.remove('popup-overlay--show');
     popup.classList.remove('order-popup--opened');
@@ -71,8 +71,8 @@ if (map) {
     myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
 
     }, {
-      iconLayout: "default#image",
-      iconImageHref: "img/icon-map-pin.svg",
+      iconLayout: 'default#image',
+      iconImageHref: 'img/icon-map-pin.svg',
       iconImageSize: [66, 101],
       iconImageOffset: [-33, -101]
     });
@@ -82,4 +82,4 @@ if (map) {
 }
 
 // Picturefill
-document.createElement( "picture" );
+document.createElement('picture');
