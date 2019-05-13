@@ -142,15 +142,16 @@
   .intro__list {
     width: 670px;
     display: flex;
-    align-items: flex-end;
     margin-top: 373px;
   }
 
   .intro__item {
+    display: flex;
     width: 50%;
   }
 
   .intro__link {
+    width: 100%;
     font-size: 20px;
     line-height: 30px;
     padding-top: 30px;
