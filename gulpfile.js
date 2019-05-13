@@ -48,7 +48,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("js", function () {
+gulp.task("scripts", function () {
   return pipeline(
     gulp.src("source/js/*.js"),
     uglify(),
@@ -114,5 +114,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
