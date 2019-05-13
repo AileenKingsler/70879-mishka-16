@@ -53,11 +53,13 @@
 .order-popup__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .order-popup__item {
   width: 31%;
+  margin-bottom: 10px;
 }
 
 .order-popup__label {
