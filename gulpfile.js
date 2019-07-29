@@ -18,6 +18,7 @@ var del = require("del");
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
+var ghpages = require("gh-pages");
 
 gulp.task("clean", function () {
   return del("build");
